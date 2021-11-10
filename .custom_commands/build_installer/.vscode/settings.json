@@ -1,6 +1,0 @@
-{
-    "python.pythonPath": "/Users/wick/.local/share/virtualenvs/build_installer-NCPospT1/bin/python",
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.enabled": true
-}
