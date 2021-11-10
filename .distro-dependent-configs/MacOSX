@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#Install homebrew
+if ! foobar_loc="$(type -p "brew")" || [[ -z $foobar_loc ]]; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+fi
+
+#Install zsh
+brew install zsh
+chsh -s $(which zsh)
+
+# Install python3 and venv
+brew install python3
+pip install virtualenv
+
+# Install tmux
+brew install tmux
+
+
+#Set aliases
+nb='export SCHRODINGER=/opt/schrodinger/LBI/suites20$($HOME/.custom_commands/get_release/get_release.env/bin/python $HOME/.custom_commands/get_release/get_release.py)'

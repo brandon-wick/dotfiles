@@ -1,0 +1,29 @@
+# Tmux
+alias tmux='tmux -u'
+alias python='python3'
+alias pip='pip3'
+
+# Git
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# Schrodinger stuff
+alias ff='${SCHRODINGER}/utilities/feature_flags'
+alias stu_add='${SCHRODINGER}/utilities/stu_add'
+alias stu_extract='${SCHRODINGER}/utilities/stu_extract'
+alias stu_execute='${SCHRODINGER}/utilities/stu_execute'
+alias stu_modify='${SCHRODINGER}/utilities/stu_modify'
+alias designer='open ${QTDIR}/bin/Designer.app'
+alias schenv='source ${SCHRODINGER_SRC}/mmshare/build_env'
+alias mae='${SCHRODINGER}/maestro'
+alias squish='${SCHRODINGER}/run squish.py'
+alias schro='cat ${SCHRODINGER}/version.txt'
+alias buildinger='${SCHRODINGER_SRC}/mmshare/build_tools/buildinger.sh'
+alias lbi='sudo $HOME/.custom_commands/build_installer/build_installer.env/bin/python $HOME/.custom_commands/build_installer/build_installer.py -t $HOME/.custom_commands/build_installer/token.pickle'
+alias dltest='$HOME/.custom_commands/download_tester/download_tester.env/bin/python $HOME/.custom_commands/download_tester/download_tester.py'
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+       alias nb='export SCHRODINGER=/opt/schrodinger/LBI/suites20$($HOME/.custom_commands/get_release/get_release.env/bin/python $HOME/.custom_commands/get_release/get_release.py)' 
+       alias mae='${SCHRODINGER}/maestro -console'
+fi
+# VPN script
+alias vpn="~/.custom_commands/vpnConnection.sh"

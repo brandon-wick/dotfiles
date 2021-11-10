@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Install zsh
+sudo apt-get install -y zsh
+chsh -s $(which zsh)
+
+# Install python3, pip, and venv
+sudo apt-get install -y python3
+sudo apt-get install -y python3-pip
+sudo apt-get install -y python3.8-venv
+
+# Install tmux
+sudo apt-get install -y tmux
